@@ -1,0 +1,243 @@
+/* ***** START OF NAV BAR STYLE ***** */
+.navbar
+{
+	min-height: 75px;
+	/*background-color: white;*/
+	/*background-image: url("content/img/header-background.png");
+	background-size: 500px;*/
+
+}
+
+@media (max-width: 768px) {
+    .social-right 
+	{
+		display: none !important;
+	}
+}
+
+.social-right
+{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+ul.social > li
+{
+	display: inline;
+}
+
+.social-right ul > li > a > span
+{
+	color: white;
+	font-size: 18px;
+}
+			
+.navbar .navbar-brand-center 
+{
+	position: absolute;
+	left: 50%;
+	display: block;
+	margin-left: -69px;	
+	font-size: 35px;
+}
+
+.navbar-jasmine .navbar-nav > li > a 
+{
+	padding-top:55px;
+	padding-bottom: 0px;
+	font-size: 12px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	color: white;
+}
+
+.nav > li > a:focus, .nav > li > a:hover
+{
+	background-color: transparent;
+	color: #0927a6 !important;
+	font-weight: bold;
+}
+
+.navbar-jasmine .navbar-toggle
+{
+	/*border-color: #ddd;*/
+	margin: 18px 0px;
+}
+
+.navbar-jasmine .navbar-toggle .icon-bar
+{
+	background-color: white;
+}
+
+.jasmine-trim
+{
+	position: absolute;
+	font-size: 0px; 
+	overflow-y:hidden;
+	height: 75px;
+	white-space: nowrap;
+	
+}
+
+.jasmine-trim img
+{
+	display: inline-block;
+}
+/* ***** END OF NAV BAR STYLE ***** */
+
+/* ***** START OF GENERAL CONTENT STYLE ***** */
+body
+{
+	/*background-color: #e8e9f4;*/
+}
+
+.float-lt { float: left; }
+.float-rt { float: right; }
+
+
+/*.carousel > div.overlay*/
+comment
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+95,ffffff+100&0+95,1+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 95%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 95%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 95%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: 1;
+}
+
+.carousel
+{
+	/*margin-top: 80px;*/
+    /*box-shadow: 0px 5px 5px #888888; */
+}
+
+.carousel-control {
+    z-index: 2;    
+}
+/* ***** START OF GENERAL CONTENT STYLE ***** */
+
+/* ***** START OF BLOG POST CONTENT STYLE ***** */
+#blogDiv
+{
+	margin-top: 75px;
+}
+
+.post-img-lt
+{
+    padding: 10px 30px 10px 10px;    
+}
+
+.post-img-rt
+{
+    padding: 10px 10px 10px 30px;    
+}
+
+@media (max-width: 768px) 
+{
+    .post-img-lt, .post-img-rt
+    {
+        padding: 10px 10px 10px 10px;    
+    }
+}
+
+.post-cate
+{
+    margin-top: 100px;
+    letter-spacing: 2px; 
+    margin-bottom: 10px;  
+}
+
+.post-title
+{
+    font-weight: bold;
+    margin-bottom: 10px;   
+}
+
+.post-date, .post-comment
+{
+    font-style: italic;    
+}
+
+.post-desc
+{
+    margin-top: 20px;
+    font-size: 12px;
+    font-family:Calibri;
+    margin-bottom: 50px;
+}
+
+.feat-title
+{
+    margin-top: 50px;    
+}
+
+.feat-items
+{
+    margin: 0 40px; 
+    text-align: center;   
+}
+
+.feat-items img
+{
+    max-height: 130px;    
+    display: inline-block;
+}
+
+@media (max-width: 1200px) 
+{
+    .feat-items img
+    {
+        max-height: 96px !important;
+    } 
+}
+
+@media (max-width: 992px) 
+{
+    .feat-items img
+    {
+        max-height: 54px !important;
+    } 
+}
+
+@media (max-width: 768px) 
+{
+    .feat-items img
+    {
+        max-height: 130px !important;
+    } 
+}
+
+/* ***** END OF BLOG POST CONTENT STYLE ***** */
+
+/* ***** START OF VIDEO LINK CONTENT STYLE ***** */
+
+#popular-vids-title
+{
+    margin-top: 10px;    
+}
+
+#popular-vids img:hover
+{
+    opacity: 0.5;
+}
+
+/* ***** END OF VIDEO LINK CONTENT STYLE ***** */
+
+
+/* ***** START OF FOOTER CONTENT STYLE ***** */
+.footer
+{
+    padding-top: 10px;
+    margin-top:10px;
+    background-color: black;    
+    color: White;
+}
+/* ***** END OF FOOTER CONTENT STYLE ***** */
