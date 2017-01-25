@@ -1,5 +1,10 @@
 class ArticlesController < ApplicationController
+  # before_action will perform the method before the following methods
+  # only: perform before_action only to these methods
   before_action :set_article, only: [:edit, :update, :show, :destroy]
+  # except: perform before_action to methods except theses
+  before_action :require_user, except: [:index, :show]
+  before_action :require_same_user, only: [:edit, :update, :destroy]
 
   def index
     @articles = Article.paginate(page: params[:page], per_page: 5)
@@ -52,5 +57,14 @@ class ArticlesController < ApplicationController
 
     def article_params
       params.require(:article).permit(:title, :description)
+    end
+
+    def require_same_user
+      # current_user is set when logged in
+      # @article is set by before_action :set_article above
+      if current_user != @article.user
+        flash[:danger] = "You can only edit or delete your own article"
+        redirect_to root_path
+      end
     end
 end
