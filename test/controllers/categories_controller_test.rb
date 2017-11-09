@@ -16,7 +16,7 @@ class CategoriesControllerTest < ActionController::TestCase
     session[:user_id] = @user.id    #simulate logged in
     get :new
     assert_response :success
-  end
+  end 
 
   test "should get show" do
     get(:show, {'id' => @category.id})
